@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tool Headshot Free Fire</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #00ff88;
+    }
+
+    .toggle-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .toggle-item {
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
+      background-color: #2c2c2c;
+      padding: 10px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+    }
+
+    .toggle-item span {
+      font-weight: bold;
+    }
+
+    .toggle-item button {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 5px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .toggle-item button.on {
+      background-color: #00ff88;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>TOOL HEADSHOT FREE FIRE</h1>
+
+  <div class="toggle-container">
+    <div class="toggle-item"><span>Bám đầu</span> <button onclick="toggle(this)">Tắt</button></div>
+    <div class="toggle-item"><span>UMP Trick</span> <button onclick="toggle(this)">Tắt</button></div>
+    <div class="toggle-item"><span>Shot Trick</span> <button onclick="toggle(this)">Tắt</button></div>
+    <div class="toggle-item"><span>Trick Nhạy</span> <button onclick="toggle(this)">Tắt</button></div>
+    <div class="toggle-item"><span>Trick Button</span> <button onclick="toggle(this)">Tắt</button></div>
+    <div class="toggle-item"><span>Trick Head</span> <button onclick="toggle(this)">Tắt</button></div>
+    <div class="toggle-item"><span>Trick Body</span> <button onclick="toggle(this)">Tắt</button></div>
+    <div class="toggle-item"><span>Trick Unlock</span> <button onclick="toggle(this)">Tắt</button></div>
+    <div class="toggle-item"><span>Auto Headshot</span> <button onclick="toggle(this)">Tắt</button></div>
+    <div class="toggle-item"><span>Fix Lag + Aim</span> <button onclick="toggle(this)">Tắt</button></div>
+  </div>
+
+  <script>
+    function toggle(button) {
+      button.classList.toggle("on");
+      button.textContent = button.classList.contains("on") ? "Bật" : "Tắt";
+    }
+  </script>
+
+</body>
+</html>
